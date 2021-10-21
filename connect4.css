@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('pexels-karolina-grabowska-4887249.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+ font-size:  4rem;
+ margin: 20px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  opacity: 85%;
+  border-radius: 20px;
+  border: 2px solid #333;
+  margin: 20px;
+  padding: 10px;
+  width: 90%
+}
+
+.playerSelection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+label, input {
+  margin: 10px;
+}
+input {
+  width: 75%
+}
+
+button {
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  width: 75%
+}
+button:hover{
+  background-color: silver;
+}
+
+.game {
+  padding: 40px;
+  background-color: azure;
+  border-radius: 20px;
+  border: 2px solid #333;
+  margin: 20px;
+}
+
+/* game board table */
+
+#board td {
+  width: 75px;
+  height: 75px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  animation-name: dropDown;
+  animation-duration: 1.5s;
+}
+
+@keyframes dropDown {
+  from{
+    transform: translateY(-400px);
+  }
+  to {
+    transofrm: translateY(0px);
+  }
+}
+
+
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: silver;
+}
