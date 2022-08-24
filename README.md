@@ -1,7 +1,7 @@
 # Connect Four using Object Oriented programming
 
 ## Check it out at: 
-https://dlmedeiro.github.io/Connect4_OO/
+https://dlmedeiro.github.io/Connect4-OO/
 
 ## How it works
 
